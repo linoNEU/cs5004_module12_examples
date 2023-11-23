@@ -6,8 +6,7 @@ package iteratearray;
  */
 public class Main {
   public static void main(String[] args) {
-    // Initialize the collection with a capacity of 3.
-    RecyclableCollection recyclables = new RecyclableCollection(3);
+    RecyclableCollection recyclables = new RecyclableCollection();
     recyclables.addItem(new RecyclableItem("Bottle", true));
     recyclables.addItem(new RecyclableItem("Can", true));
     recyclables.addItem(new RecyclableItem("Plastic Bag", false));

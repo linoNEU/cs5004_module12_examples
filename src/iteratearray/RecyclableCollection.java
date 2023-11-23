@@ -10,10 +10,9 @@ public class RecyclableCollection {
 
   /**
    * Constructor.
-   *
-   * @param size The size of the collection.
    */
-  public RecyclableCollection(int size) {
+  public RecyclableCollection() {
+    int size = 10; // We assume the collection will not exceed 10 items.
     items = new RecyclableItem[size];
     count = 0;
   }

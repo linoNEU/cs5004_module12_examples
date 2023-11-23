@@ -8,7 +8,14 @@ import java.util.List;
  * This allows us to use the for-each loop to iterate through the collection.
  */
 public class RecyclableCollection {
-  private final List<RecyclableItem> items = new ArrayList<>();
+  private final List<RecyclableItem> items;
+
+  /**
+   * Constructor.
+   */
+  public RecyclableCollection() {
+    items = new ArrayList<>();
+  }
 
   /**
    * Adds an item to the collection.
