@@ -1,32 +1,33 @@
-package iteratelist;
+package iterator;
 
 import java.util.Iterator;
-import java.util.List;
 
 /**
- * An iterator for the RecyclableCollection class.
+ * An iterator for the GreenEarthRecyclingCenter class.
  */
-public class RecyclableCollectionIterator implements Iterator<RecyclableItem> {
-  private final List<RecyclableItem> items;
+public class GreenEarthRecyclingCenterIterator implements Iterator<RecyclableItem> {
+  private final RecyclableItem[] items;
   private int currentIndex = 0;
+  private final int size;
 
   /**
    * Constructor.
    *
    * @param items The list of items to iterate through.
    */
-  public RecyclableCollectionIterator(List<RecyclableItem> items) {
+  public GreenEarthRecyclingCenterIterator(RecyclableItem[] items, int size) {
     this.items = items;
+    this.size = size;
   }
 
   @Override
   public boolean hasNext() {
-    return currentIndex < items.size();
+    return currentIndex < size;
   }
 
   @Override
   public RecyclableItem next() {
-    return items.get(currentIndex++);
+    return items[currentIndex++];
   }
 
   @Override
@@ -34,4 +35,3 @@ public class RecyclableCollectionIterator implements Iterator<RecyclableItem> {
     throw new UnsupportedOperationException("Remove not supported.");
   }
 }
-

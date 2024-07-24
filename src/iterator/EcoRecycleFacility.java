@@ -1,37 +1,30 @@
-package iteratelist;
+package iterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
  * A collection class for recyclable items that implements Iterable.
  * This allows us to use the for-each loop to iterate through the collection.
  */
-public class RecyclableCollection {
+public class EcoRecycleFacility implements RecyclableCollection {
   private final List<RecyclableItem> items;
 
   /**
    * Constructor.
    */
-  public RecyclableCollection() {
+  public EcoRecycleFacility() {
     items = new ArrayList<>();
   }
 
-  /**
-   * Adds an item to the collection.
-   *
-   * @param item The item to add.
-   */
+  @Override
   public void addItem(RecyclableItem item) {
     items.add(item);
   }
 
-  /**
-   * Gets the iterator for the collection.
-   *
-   * @return The iterator.
-   */
-  public RecyclableCollectionIterator getIterator() {
-    return new RecyclableCollectionIterator(items);
+  @Override
+  public Iterator<RecyclableItem> getIterator() {
+    return items.iterator();
   }
 }

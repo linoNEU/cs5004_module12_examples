@@ -1,4 +1,4 @@
-package iteratearray;
+package iterator;
 
 /**
  * An example of a simple class that represents an item that can be recycled.
