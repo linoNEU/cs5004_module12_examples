@@ -1,4 +1,4 @@
-# CS 5004: Object-Oriented Design - Module 4 Exercise
+# CS 5004: Object-Oriented Design - Module 12 Exercise
 
 ## Overview
 This repository contains Java code that demonstrates the use of the Iterator design pattern within the context of a recycling center application. The application models two recycling centers, `Green Earth Recycling Center` and `Eco Recycle Facility`, each managing a collection of recyclable items. The primary focus is on iterating over these collections in a uniform manner, despite the differences in their underlying data structures.
