@@ -14,6 +14,7 @@ public class GreenEarthRecyclingCenterIterator implements Iterator<RecyclableIte
    * Constructor.
    *
    * @param items The list of items to iterate through.
+   * @param size The number of items in the list.
    */
   public GreenEarthRecyclingCenterIterator(RecyclableItem[] items, int size) {
     this.items = items;

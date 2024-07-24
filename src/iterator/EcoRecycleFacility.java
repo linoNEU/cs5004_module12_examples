@@ -5,8 +5,9 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * A collection class for recyclable items that implements Iterable.
- * This allows us to use the for-each loop to iterate through the collection.
+ * A collection class for recyclable items. The items are stored in a List but, because we
+ * are using an iterator, the underlying data structure can be changed without affecting the
+ * client code.
  */
 public class EcoRecycleFacility implements RecyclableCollection {
   private final List<RecyclableItem> items;
